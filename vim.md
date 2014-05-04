@@ -15,7 +15,7 @@
             00000j0
   1.6. :help i 看一下命令帮助,:q退出
   1.7. eg gg到文首，G到文未,17G再回
-  1.8. :%s/holle/hello/g holle换hello, u变回来
+  1.8. eg :%s/holle/hello/g holle换hello, u变回来
 
 2.  感觉良好
   2.1. cw → 替换从光标所在位置后到一个单词结尾的字符 dw只删除
@@ -23,7 +23,7 @@
       eg delete only
   2.2.  eg 0 到行头 ^ 到非空头            
         $ 到行尾, g_ 不空尾。
-  2.3. eg yy拷贝 p粘贴 
+  2.3. eg yy(/Y)拷贝行 p粘贴 
   2.4. eg u取消，Ctrl-r redo
   2.5. eg :e 打开文件在buffer, :bp 回上个，:bn 到下个，:ls 看所有，:b1到第一，:q会全退，
   2.6. eg :w存 :saveas , :x :wq ZZ 保存退出，:q! 不存就退出 :qa!退所有
@@ -33,17 +33,15 @@
     eg ywthisword 再按...
   3.2. N<command>重复某个命令N次
     eg ywthisword 再按4P
-  3.3. 2dd 删除两行，3p粘贴三次， 100idesu(Esc Esc)(Esc按两次)
-  3.4. .  3. 重复一次所有，重三次内部
+  3.4. 100idesu(Esc Esc)(Esc按两次) .  3. 重复一次所有，重三次内部 
     eg 100idesu, 按.再3.
-  3.5. eg 跳到第几行，gg到第一，G到最后,39G再回来
   3.6. w 到下字开头 e到本字尾 
     eg 按d，再按w，再按e
   3.7. WE到小段
     eg this is a word
        this is a line
   3.8. eg % to({[word]})
-  3.9. eg first first eg * # 下一个前一个当前词
+  3.9. eg first first eg * # 下一个前一个当前词, 按下n会会变成他
   3.10. eg 组合： 0y$ 行头拷贝到行尾,再p
   3.11. ye egthiswordThenP
   3.12. y2/fooCopyBeforefoo  eg foo100foo 
